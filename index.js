@@ -4,9 +4,14 @@ $(document).ready(function () {
     success: (results) => {
       const data = results.data;
       let tbrow = "";
+      let i = 0;
 
-      data.forEach((d, i) => {
-        tbrow += showTbrow(d);
+      data.forEach((d) => {
+        // Karena di file jsonnya ada provinsi yang namanya indonesia :/
+        if (d.provinsi != "Indonesia") {
+          i++;
+          tbrow += showTbrow(d, i);
+        }
       });
       $(".tbody").html(tbrow);
     },
@@ -16,9 +21,9 @@ $(document).ready(function () {
   });
 });
 
-function showTbrow(d) {
+function showTbrow(d, i) {
   return ` <tr>
-            <th scope="row">1</th>
+            <th scope="row">${i}</th>
             <td>${d.provinsi}</td>
             <td>${d.kasusPosi}</td>
             <td>${d.kasusSemb}</td>
