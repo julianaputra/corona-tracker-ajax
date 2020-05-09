@@ -1,14 +1,14 @@
 $(document).ready(function () {
   $.ajax({
-    url: "http://api.kawalcorona.com/indonesia/provinsi",
+    url: "https://indonesia-covid-19.mathdro.id/api/provinsi",
     success: (results) => {
-      console.log(results);
-      // const movies = results.Search; //ngilangin Search biar jadi array of object
-      // let cards = "";
-      // movies.forEach((m) => {
-      //   cards += showCards(m);
-      // });
-      // $(".movie-container").html(cards);
+      const data = results.data;
+      let tbrow = "";
+
+      data.forEach((d, i) => {
+        tbrow += showTbrow(d);
+      });
+      $(".tbody").html(tbrow);
     },
     error: (e) => {
       console.log(e.responseText);
@@ -16,15 +16,12 @@ $(document).ready(function () {
   });
 });
 
-function showCards(m) {
-  return `<div class="col-md-4 my-3">
-            <div class="card">
-            <img src="${m.Poster}" class="card-img-top" />
-            <div class="card-body">
-                <h5 class="card-title">${m.Title}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">${m.Year}</h6>
-                <a href="#" class="btn btn-primary modal-detail-button" data-toggle="modal" data-target="#movieDetailModal" data-imdbid="${m.imdbID}">Show Details</a>
-            </div>
-            </div>
-        </div>`;
+function showTbrow(d) {
+  return ` <tr>
+            <th scope="row">1</th>
+            <td>${d.provinsi}</td>
+            <td>${d.kasusPosi}</td>
+            <td>${d.kasusSemb}</td>
+            <td>${d.kasusMeni}</td>
+          </tr>`;
 }
