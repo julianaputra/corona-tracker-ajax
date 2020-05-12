@@ -17,18 +17,24 @@
       crossorigin="anonymous"
     />
 
-    <title>Corona Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Corona Tracker by Juliana Putra</title>
   </head>
 
   <body>
     <div class="container">
       <div class="row mt-5">
-        <div class="col">
+        <div class="col text-center">
           <h1>Corona Tracker</h1>
         </div>
       </div>
 
-      <div class="row row-cards">
+      <div class="row my-3 card-container">
+        <!-- card components -->
+      </div>
+
+      <div class="row row-cards my-5">
         <div class="col">
           <div class="card">
             <div class="card-header">
@@ -37,7 +43,7 @@
               </h6>
             </div>
             <div class="card-body">
-              <div class="table-responsive">
+              <div class="table-responsive" style="height: 350px;">
                 <table
                   class="table table-bordered table-hover text-nowrap mb-0"
                 >
@@ -51,9 +57,7 @@
                     </tr>
                   </thead>
                   <tbody class="tbody">
-                    <!-- looping start -->
-
-                    <!-- looping end -->
+                    <!-- table row datas -->
                   </tbody>
                 </table>
               </div>
@@ -70,6 +74,9 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -80,6 +87,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
     <script src="index.js"></script>
   </body>
 </html>
