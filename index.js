@@ -49,7 +49,7 @@ function showTbrow(d, i) {
 
 function showCards(r) {
   return `  <div class="col-xs-12 col-sm-4">
-              <div class="card text-center">
+              <div class="card text-center mb-3">
                 <div class="card-header bg-warning">
                   <h6 class="card-title m-0">
                     POSITIF
@@ -61,7 +61,7 @@ function showCards(r) {
               </div>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <div class="card text-center">
+              <div class="card text-center mb-3">
                 <div class="card-header bg-success">
                   <h6 class="card-title m-0">
                     SEMBUH
@@ -73,7 +73,7 @@ function showCards(r) {
               </div>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <div class="card text-center">
+              <div class="card text-center mb-3">
                 <div class="card-header bg-danger">
                   <h6 class="card-title m-0">
                     MENINGGAL
