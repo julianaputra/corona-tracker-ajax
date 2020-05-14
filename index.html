@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      http-equiv="Content-Security-Policy"
-      content="upgrade-insecure-requests, width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" http-equiv="Content-Security-Policy"
+    content="upgrade-insecure-requests, width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://kit.fontawesome.com/e656f4cdd7.js" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
 
-    <title>Corona Tracker by Juliana Putra</title>
-  </head>
+  <title>Corona Tracker by Juliana Putra</title>
+</head>
 
-  <body>
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col text-center">
-          <h1>Corona Tracker</h1>
-        </div>
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>COVID-19</h1>
       </div>
+    </div>
 
-      <div class="row my-3 card-container">
-        <!-- card components -->
-      </div>
+    <div class="row my-3 card-container">
+      <!-- card components -->
 
-      <div class="row row-cards mb-5">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">
-              <h6 class="card-title m-0">
-                Data Kasus Coronavirus di Indonesia Berdasarkan Provinsi
-              </h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive" style="height: 350px;">
-                <table
-                  class="table table-bordered table-hover text-nowrap mb-0"
-                >
-                  <thead>
-                    <tr>
-                      <th scope="col">NO</th>
-                      <th scope="col">PROVINSI</th>
-                      <th scope="col">POSITIF</th>
-                      <th scope="col">SEMBUH</th>
-                      <th scope="col">MENINGGAL</th>
-                    </tr>
-                  </thead>
-                  <tbody class="tbody">
-                    <!-- table row datas -->
-                  </tbody>
-                </table>
-              </div>
+    </div>
+
+    <div class="row row-cards mb-5">
+      <div class="col">
+        <div class="card MyShadow">
+          <div class="card-header bg-white">
+            <h6 class="card-title m-0">
+              Data Kasus Coronavirus di Indonesia Berdasarkan Provinsi
+            </h6>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive" style="height: 350px;">
+              <table class="table table-bordered table-hover text-nowrap mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">NO</th>
+                    <th scope="col">PROVINSI</th>
+                    <th scope="col">
+                      POSITIF
+                      <span style="font-size: 18px;  color: #FF9960;">
+                        <i class="fas fa-virus rounded-circle" style="background-color: #FF996030; padding: 5px;"></i>
+                      </span></th>
+                    <th scope="col">SEMBUH
+                      <span style="font-size: 18px; color: #6BD37C;">
+                        <i class="fas fa-heartbeat rounded-circle"
+                          style="background-color: #6BD37C30; padding: 5px;"></i>
+                      </span>
+                    </th>
+                    <th scope="col">MENINGGAL
+                      <span style="font-size: 18px; color: #FF6060;">
+                        <i class="fas fa-skull rounded-circle" style="background-color: #FF606030; padding: 5px;"></i>
+                      </span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="tbody">
+                  <!-- table row datas -->
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-    <script src="index.js"></script>
-  </body>
+  <script src="index.js"></script>
+</body>
+
 </html>
